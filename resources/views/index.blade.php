@@ -26,6 +26,7 @@
         <div class="card card-body shadow-2 mb-2">
             <div class="d-flex">
                 <p>
+                     <span class="font-weight-bold mr-2">{{ Auth::user()->name }}</span>
                      <span style="font-size: 0.8rem;">{{ $music->created_at }}</span>
                 </p>
                <div class="card-text">
@@ -46,4 +47,9 @@
         </div>
         @endforeach
 </x-app-layout>
+<script>
+    function myFunction(){
+        document.getElementById("odai").innerHTML = "ここは、青々とした森に囲まれた小さな村。\n昔から、この村には不思議な力が宿っていると言われています。\n昨晩、村の中心にある神殿から、異変が起こったとの報せが入りました。\n神殿には古くから伝わる、不思議な神獣の像が祀られています。\n果たして、村に何が起こったのでしょうか？\n神殿の神獣像に何か起きたのか、それとも何か別の原因があるのでしょうか？\n次回の放送で、詳しくお伝えします。\nお見逃しなく！";
+    }
+</script>
 
