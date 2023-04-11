@@ -20,9 +20,6 @@
 </head>
 <body class="vh-100">
     <div class="row">
-        <div class="d-none d-lg-block col-lg-5">
-            <img src="{{ asset('img/logo.png') }}" alt="" class="w-100 vh-100" style="object-fit: cover;">
-        </div>
         <div class="col-12 col-lg-7">
             <div class="vh-100 d-flex flex-column justify-content-center px-4 px-lg-0">
                 <img src="/img/logo.png" alt="" style="width: 60px;" class="mt-5 mb-4">
@@ -33,7 +30,7 @@
                         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                             @auth
                                 <div class="mb-6">
-                                    <a href="{{ route('index') }}"  class="btn btn-primary btn-rounded font-weight-bold btn-lg" style="width: 200px;">
+                                    <a href="{{ route('music.index') }}"  class="btn btn-primary btn-rounded font-weight-bold btn-lg" style="width: 200px;">
                                         VoiceSample一覧
                                     </a>
                                 </div>
