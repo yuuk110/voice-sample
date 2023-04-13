@@ -14,11 +14,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Material Design for Bootstrap 読み込み 開始 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
-        <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" />
-        <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}" defer></script>
-        <!-- Material Design for Bootstrap 読み込み 終了 -->
-        <!-- Material Design for Bootstrap 読み込み 開始 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

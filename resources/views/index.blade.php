@@ -1,4 +1,5 @@
 <x-app-layout>
+    <div class="center">
     <div class="odai box">
         <h2>お題</h2>
         <div>
@@ -18,17 +19,20 @@
         <div>
             <input type="file" name="file">
         </div>
-        <button type="submit">Upload</button>
+        <button type="submit" class="btn btn-primary">Upload</button>
     </form>
+    </div>
 
     <h1>Play Sample</h1>
         @foreach($musics as $music)
         <div class="card card-body shadow-2 mb-2">
             <div class="d-flex">
+                <div class="user">
                 <p>
                      <span class="font-weight-bold mr-2">{{ Auth::user()->name }}</span>
                      <span style="font-size: 0.8rem;">{{ $music->created_at }}</span>
                 </p>
+                </div>
                <div class="card-text">
                 <div>
                     {{ $music->title }}
