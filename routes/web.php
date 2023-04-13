@@ -16,18 +16,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('top');
+    return view('index');
 });
 
 
 
-Route::middleware('auth')->group(function () {
-    Route::get('/index', [MusicController::class, 'index'])->name('music.index');
+
+    Route::get('/', [MusicController::class, 'index'])->name('music.index');
     Route::post('/upload', [MusicController::class, 'upload']);
-    Route::get('/index/{$filename}', [MusicController::class, 'play']);
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+    Route::get('/{$filename}', [MusicController::class, 'play']);
+    
+
 
 require __DIR__.'/auth.php';

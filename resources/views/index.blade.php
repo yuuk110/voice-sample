@@ -24,12 +24,12 @@
     </div>
 
     <h1>Play Sample</h1>
+      @if(isset($musics))
         @foreach($musics as $music)
         <div class="card card-body shadow-2 mb-2">
             <div class="d-flex">
                 <div class="user">
                 <p>
-                     <span class="font-weight-bold mr-2">{{ Auth::user()->name }}</span>
                      <span style="font-size: 0.8rem;">{{ $music->created_at }}</span>
                 </p>
                 </div>
@@ -50,6 +50,7 @@
             </div>
         </div>
         @endforeach
+      @endif
 </x-app-layout>
 <script>
     function myFunction(){

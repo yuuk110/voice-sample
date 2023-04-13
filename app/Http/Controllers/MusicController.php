@@ -13,7 +13,7 @@ class MusicController extends Controller
     public function index()
     {
         $musics = Music::all();
-        return view('index', ['musics' => $musics]);
+        return view('/index', ['musics' => $musics]);
     }
 
     public function upload(Request $request)
@@ -31,7 +31,7 @@ class MusicController extends Controller
             $music->save();
         }
 
-        return redirect('index');
+        return redirect('/');
     }
 
     public function play($filename)
