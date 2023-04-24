@@ -31,7 +31,7 @@ class MusicController extends Controller
             $music->save();
         }
 
-        return redirect('/');
+        return redirect('/index');
     }
 
     public function play($filename)
